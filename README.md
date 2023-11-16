@@ -7,6 +7,31 @@ My contributions to this code base include:
 ## CSS Modifications
 This website came with a `style.css` file contained within the root `assets/` directory. This file contained a multitude of redundant features and I was able to significantly trim the codebase.
 
+### Redundant CSS 1
+```css
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+```
+Each one of the above classes is targeted by the same rule. We can easily trim the code to one rule that targets their parent element (`<div class="benefits">`)
+
+```css
+.benefits div {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+```
+
+
 Within the main `index.html` file one can find the below code block (with text)
 ```html
 <div class="content">
