@@ -2,12 +2,15 @@
 
 My contributions to this code base include:
 # Table of Contents
-1. [CSS Modifications](#css-modifications)
+1. [HTML Modifications](#html-modifications)
+2. [CSS Modifications](#css-modifications)
+    1. [Redundant CSS Code 1](#redundant-css-code-1)
+## HTML Modifications
 
 ## CSS Modifications
 This website came with a `style.css` file contained within the root `assets/` directory. This file contained a multitude of redundant features and I was able to significantly trim the codebase.
 
-### Redundant CSS 1
+### Redundant CSS Code 1
 ```css
 .benefit-lead {
     margin-bottom: 32px;
