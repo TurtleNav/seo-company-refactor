@@ -3,9 +3,23 @@
 My contributions to this code base include:
 # Table of Contents
 1. [HTML Modifications](#html-modifications)
+    1. [Added a "viewport" meta tag](#added-a-"viewport"-meta-tag)
+    2. [Added a Descriptive Title](#added-a-descriptive-title)
 2. [CSS Modifications](#css-modifications)
     1. [Redundant CSS Code 1](#redundant-css-code-1)
+
 ## HTML Modifications
+The HTML found in this codebase is good for the most part. Somesimple changes were made for SEO and acessibility, however.
+
+### Added a "viewport" meta tag
+The below code was added to our `index.html`'s head element:
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+```
+This code betters the appearance on narrow-screened devices such as mobile phones.
+
+### Added a Descriptive Title
+
 
 ## CSS Modifications
 This website came with a `style.css` file contained within the root `assets/` directory. This file contained a multitude of redundant features and I was able to significantly trim the codebase.
