@@ -1,10 +1,15 @@
 # Homework 01 - HTML, CSS, and Git: Code Refactor
 
+Deployment Link - <https://turtlenav.github.io/seo-company-refactor/>
+
+
 My contributions to this code base include:
 # Table of Contents
 1. [HTML Modifications](#html-modifications)
     1. [Added a "viewport" meta tag](#added-a-"viewport"-meta-tag)
     2. [Added a Descriptive Title](#added-a-descriptive-title)
+    3. [Fixed Broken Link in Body](#fixed-broken-link-in-body)
+    4. [Add Alt Attribute to Images](#add-alt-attribute-to-images)
 2. [CSS Modifications](#css-modifications)
     1. [Redundant CSS Code 1](#redundant-css-code-1)
 
@@ -19,7 +24,16 @@ The below code was added to our `index.html`'s head element:
 This code betters the appearance on narrow-screened devices such as mobile phones.
 
 ### Added a Descriptive Title
+Changed the <title> tag to be more descriptive. For SEO purposes, a <title> should contain our website's keywords. I changed the previous value of "website" "Horiseon Social Solution Services".
 
+### Fixed Broken Link in Body
+Within the body of the website, an internal linked `<a>` tag was targeting an id that didn't exist. The `<div>` that it wasupposed to be targeting had its id attribute set as follows:
+```html <div id="online-reputation-management">```
+
+### Add Alt Attribute to Images
+
+#### Special Case
+There is a CSS background image on our webpage and is applied to `<div class="hero"></div>`. Since div's don't have an alt attribute, if we want the image to achieve our accessibility requirements, we can instead assign alt text to the div's title attribute: `<div class="hero" title="Employees gathered around a table"></div>` 
 
 ## CSS Modifications
 This website came with a `style.css` file contained within the root `assets/` directory. This file contained a multitude of redundant features and I was able to significantly trim the codebase.
