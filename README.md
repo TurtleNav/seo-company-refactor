@@ -11,7 +11,7 @@ My contributions refactoring this code base include:
     4. [Add Alt Attribute to Images](#add-alt-attribute-to-images)
         1. [Special Case](#special-case)
 2. [CSS Modifications](#css-modifications)
-    1. [Redundant CSS Code 1](#redundant-css-code-1)
+    1. [Redundant CSS Code](#redundant-css-code)
 
 ## HTML Modifications
 The HTML found in this codebase is good for the most part. Somesimple changes were made for SEO and acessibility, however.
@@ -30,8 +30,7 @@ Changed the <title> tag to be more descriptive. For SEO purposes, a <title> shou
 The link with the cursor hovering over was broken upon recieving this codebase:
 ![Broken Link](broken-link-example.png)
 
-Within `index.html`, a `<a>` tag was linking an internal id that didn't exist. The `<div>` that it was supposed to be targeting had its id attribute set as follows:
-```html <div id="online-reputation-management">```
+Within `index.html`, a `<a>` tag was linking an internal id that didn't exist. The `<div>` that it was supposed to be targeting had its id attribute changed like so: ```html <div id="search-engine-optimization">```
 
 ### Add Alt Attribute to Images
 For user accessibility and SEO it is incredibly important to provide alt attributes to images. Each image was given alt text that was as short as possible to describe the image it was replacing.
@@ -90,5 +89,3 @@ above rules instead. It is worth mentioning that the above html code block assig
 pointless class attribute to each `<div>` and we can improve our html code by deleting
 all three of them. If we did wish to target different rules to each `<div>` then our
 css file should target their id attribute instead.
-
-
